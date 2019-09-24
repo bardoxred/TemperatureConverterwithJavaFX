@@ -20,11 +20,11 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <TabPane prefHeight="320.0" prefWidth="350.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="320.0" prefWidth="465.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Celsius">
+          <Tab closable="false" text="Convert from Celsius">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="281.0" prefWidth="350.0" style="-fx-background-color: red;">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="281.0" prefWidth="350.0" style="-fx-background-color: black;">
                      <children>
                         <GridPane prefHeight="206.0" prefWidth="350.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <columnConstraints>
@@ -61,20 +61,20 @@
                                     <Font size="16.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="celsiusTextField1" GridPane.columnIndex="1" />
-                              <TextField fx:id="fahrenheitTextField1" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="kelvinTextField1" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="celsiusTextField1" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="fahrenheitTextField1" disable="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="kelvinTextField1" disable="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#celsiusConvert" prefHeight="27.0" prefWidth="325.0" text="Convert" />
-                        <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton1" prefHeight="27.0" prefWidth="325.0" text="Reset" />
+                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#celsiusConvert" prefHeight="27.0" prefWidth="380.0" text="Convert" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton1" prefHeight="27.0" prefWidth="380.0" text="Reset" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Fahrenheit">
+          <Tab closable="false" text="Convert from Fahrenheit">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="0.0" style="-fx-background-color: blue;">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="0.0" style="-fx-background-color: black;">
                      <children>
                         <GridPane prefHeight="206.0" prefWidth="350.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <columnConstraints>
@@ -111,19 +111,19 @@
                                     <Font size="16.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="fahrenheitTextField2" GridPane.columnIndex="1" />
-                              <TextField fx:id="celsiusTextField2" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="kelvinTextField2" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="fahrenheitTextField2" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="celsiusTextField2" disable="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="kelvinTextField2" disable="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#fahrenheitConvert" prefHeight="27.0" prefWidth="325.0" text="Convert" />
-                        <Button layoutX="13.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton2" prefHeight="27.0" prefWidth="325.0" text="Reset" />
+                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#fahrenheitConvert" prefHeight="27.0" prefWidth="380.0" text="Convert" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Button layoutX="13.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton2" prefHeight="27.0" prefWidth="380.0" text="Reset" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                      </children></AnchorPane>
             </content>
           </Tab>
-            <Tab text="Kelvin">
+            <Tab closable="false" text="Convert from Kelvin">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: green;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
                      <children>
                         <GridPane prefHeight="206.0" prefWidth="350.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <columnConstraints>
@@ -160,13 +160,13 @@
                                     <Font size="16.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="kelvinTextField3" GridPane.columnIndex="1" />
-                              <TextField fx:id="fahrenheitTextField3" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="celsiusTextField3" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="kelvinTextField3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="268.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="fahrenheitTextField3" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="celsiusTextField3" disable="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#kelvinConvert" prefHeight="27.0" prefWidth="325.0" text="Convert" />
-                        <Button layoutX="13.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton3" prefHeight="27.0" prefWidth="325.0" text="Reset" />
+                        <Button layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#kelvinConvert" prefHeight="27.0" prefWidth="380.0" text="Convert" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                        <Button layoutX="13.0" layoutY="246.0" mnemonicParsing="false" onAction="#resetButton3" prefHeight="27.0" prefWidth="380.0" text="Reset" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                      </children></AnchorPane>
               </content>
             </Tab>
