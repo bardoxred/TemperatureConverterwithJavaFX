@@ -1,7 +1,6 @@
 # TemperatureConverterwithJavaFX
 
-![](image.png)
-
+![](image1.png)
 *This is simply program which is converting all temperatures*
 You can convert with this program decimal numbers of temperatures.
 
